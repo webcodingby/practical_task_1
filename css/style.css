@@ -1,19 +1,107 @@
-* {
-
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body {
+                                        /* Обертка всего контента */
 
+.container {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
 }
 
-header {
+                                        /* Обертка кругов */
 
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  font-size: 0;
 }
 
-main {
+                                        /* Стили всех кругов */
 
+.circle {
+  display: inline-block;
+  width: 40%;
+  height: 80%;
+  background: #EE220C;
+  border-radius: 50%;
 }
 
-footer {
-    
+
+
+                                        /* Выставляем круги на углы квадрата */
+
+.circle-top__left{
+  position: relative;
+}
+
+.circle-top__right {
+  position: relative;
+  left: 20%;
+}
+
+.circle-bottom__left {
+  position: relative;
+  top: 20%;
+}
+
+.circle-bottom__right {
+  position: relative;
+  left: 20%;
+  top: 20%;
+}
+
+                                        /* Стили кругов при наведении на них */
+
+.circle-top__left:hover {
+  background: #325ca8;
+  z-index: 5;
+}
+
+.circle-top__right:hover {
+  background: #3bab33;
+  z-index: 5;
+}
+
+
+.circle-bottom__left:hover {
+  background: #cc1fc6;
+  z-index: 5;
+}
+
+.circle-bottom__right:hover {
+  background: #cc5c1f;
+  z-index: 5;
+}
+
+                                        /* Стили большого квадрата */
+
+.square-big {
+  position: relative;
+  bottom: 80%;
+  left: 20%;
+  width: 60%;
+  height: 60%;
+  background: #00A2FF;
+}
+
+.square-big:hover {
+  background: #bdbd3e;
+  z-index: 5;
+}
+
+                                        /* Стили маленьеого квадрата */
+
+.square-little {
+  position: relative;
+  bottom: 125%;
+  left: 35%;
+  width: 30%;
+  height: 30%;
+  border-radius: 20%;
+  background: #F8BA00;
 }
